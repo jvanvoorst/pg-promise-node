@@ -1,5 +1,7 @@
 var connection = require('./connection.js');
-var pgp = require('pg-promise');
+var pgp = require('pg-promise')({
+	// Initialization Options
+});
 
 var db = pgp(connection);
 
